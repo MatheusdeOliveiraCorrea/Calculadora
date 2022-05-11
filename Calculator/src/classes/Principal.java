@@ -20,6 +20,8 @@ public class Principal {
 		  System.out.print("Digite o numero aqui: "); int escolha = input.nextInt();
 		  System.out.println("");
 		  
+		  
+		  //escolhe a operação chamando o método correto 
 		  switch (escolha) {
 		  
 		  case 1:
