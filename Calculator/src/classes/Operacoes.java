@@ -7,13 +7,13 @@ public class Operacoes {
 
 	public void somar() {
 
-		long continuarsomar = -1;
-		long total = 0;
+		double continuarsomar = -1;
+		double total = 0;
 
 		while (continuarsomar != 0) {
 
 			System.out.println("Some o(s) numero(s):  (para parar digite 0)  ");
-			long numero = input.nextLong();
+			double numero = input.nextDouble();
 			total += numero;
 
 			continuarsomar = numero;
@@ -28,12 +28,12 @@ public class Operacoes {
 		while (0 == 0) {
 
 			System.out.println("subtraia os seguintes numeros: ");
-			long numero = input.nextLong();
+			double numero = input.nextDouble();
 
 			System.out.println("subtraia os seguintes numeros: ");
-			long numero2 = input.nextLong();
+			double numero2 = input.nextDouble();
 
-			long total = numero - numero2;
+			double total = numero - numero2;
 
 		}
 
@@ -41,18 +41,20 @@ public class Operacoes {
 
 	public void dividir() {
 
-		System.out.println("Qual numero voce quer dividir? (zero para parar) ");
-		long numero = input.nextLong(); // pega o primeiro
+		System.out.println("Qual numero voce quer dividir? (digite zero para parar) ");
+		double numero = input.nextDouble(); // pega o primeiro
 
-		System.out.println("Qual numero voce quer dividir? (zero para parar) ");
-		long numero2 = input.nextLong(); // o segundo
+		System.out.println("Qual numero voce quer dividir? (digite zero para parar) ");
+		double numero2 = input.nextDouble(); // o segundo
 
-		long resultado = numero / numero2; // divide
+		double resultado = numero / numero2; // divide
 
+		
+		//Caso se tenha nescessidade de dividir mais que dois numeros
 		while (numero != 0) {
 
-			System.out.println("Qual numero voce quer dividir? ");
-			long pronumero = input.nextLong();
+			System.out.println("Qual numero voce quer dividir? (digite zero para parar) ");
+			double pronumero = input.nextDouble();
 
 			if (pronumero == 0) {
 				System.out.println("resultado: " + resultado);
@@ -72,16 +74,16 @@ public class Operacoes {
 	public void multiplicar() {
 
 		System.out.println("Qual numero voce quer multiplicar? (zero para parar) ");
-		long numero = input.nextLong();
+		double numero = input.nextDouble();
 
 		System.out.println("Voce quer multiplicar por qual outro numero? (zero para parar) ");
-		long numero2 = input.nextLong();
+		double numero2 = input.nextDouble();
 
-		long resultado = numero * numero2;
+		double resultado = numero * numero2;
 
 		while (numero != 0) {
 			System.out.println("Voce quer multiplicar por qual outro numero? (zero para parar) ");
-			long pronumero = input.nextLong();
+			double pronumero = input.nextDouble();
 
 			if (pronumero == 0) {
 
@@ -101,16 +103,13 @@ public class Operacoes {
 	public void aoQuadrado() {
 		
 		System.out.println("Qual numero voce quer elevar ao quadrado? ");
-		double numero = input.nextLong();
+		double numero = input.nextDouble();
 		
 		
 		double resultado = Math.pow(numero, 2);
 		
 		System.out.println("Resultado " + resultado);
 	}
-	
-	
-	
 	
 
 }
