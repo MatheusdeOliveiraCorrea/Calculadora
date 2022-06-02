@@ -5,6 +5,7 @@ import java.util.Scanner;
 import interfaces.ContratoOperacoes;
 
 public class Operacoes implements ContratoOperacoes {
+	
 	Scanner input = new Scanner(System.in);
 	
 	@Override
@@ -120,12 +121,6 @@ public class Operacoes implements ContratoOperacoes {
 		
 	}
 	
-	
-	@Override
-	public void binarioDeciamal() {
-		// TODO Auto-generated method stub
-		
-	}
 	
 	
 	@Override

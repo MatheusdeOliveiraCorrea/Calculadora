@@ -12,10 +12,7 @@ public interface ContratoOperacoes {
 	
 	public void elevarQuadrado();
 	
-	public void binarioDeciamal(); 
-	
 	public void gerarAleatorio();
 	
-	
-	
+
 }
