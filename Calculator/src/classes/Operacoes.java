@@ -2,9 +2,12 @@ package classes;
 
 import java.util.Scanner;
 
-public class Operacoes {
-	Scanner input = new Scanner(System.in);
+import interfaces.ContratoOperacoes;
 
+public class Operacoes implements ContratoOperacoes {
+	Scanner input = new Scanner(System.in);
+	
+	@Override
 	public void somar() {
 
 		double continuarsomar = -1;
@@ -22,10 +25,10 @@ public class Operacoes {
 		System.out.println("\nO resultado da soma e: " + total);
 
 	}
-
+	@Override
 	public void subtrair() {
 
-		while (0 == 0) {
+		while (true) {
 
 			System.out.println("subtraia os seguintes numeros: ");
 			double numero = input.nextDouble();
@@ -39,6 +42,7 @@ public class Operacoes {
 
 	}
 
+	@Override
 	public void dividir() {
 
 		System.out.println("Qual numero voce quer dividir? (digite zero para parar) ");
@@ -71,6 +75,7 @@ public class Operacoes {
 
 	}
 
+	@Override
 	public void multiplicar() {
 
 		System.out.println("Qual numero voce quer multiplicar? (zero para parar) ");
@@ -99,9 +104,11 @@ public class Operacoes {
 		}
 
 	}
+
 	
-	public void aoQuadrado() {
-		
+	@Override
+	public void elevarQuadrado() {
+
 		System.out.println("Qual numero voce quer elevar ao quadrado? ");
 		double numero = input.nextDouble();
 		
@@ -109,6 +116,22 @@ public class Operacoes {
 		double resultado = Math.pow(numero, 2);
 		
 		System.out.println("Resultado " + resultado);
+		
+		
+	}
+	
+	
+	@Override
+	public void binarioDeciamal() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	@Override
+	public void gerarAleatorio() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 
